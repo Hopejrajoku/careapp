@@ -2,7 +2,7 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/navication";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -161,7 +161,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               label="Gender"
               renderSkeleton={(field) => (
                 <FormControl>
-                  <RadioGroup
+                  <RadioGroup 
                     className="flex h-11 gap-6 xl:justify-between"
                     onValueChange={field.onChange}
                     defaultValue={field.value}
