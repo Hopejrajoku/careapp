@@ -2,7 +2,7 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import Image from "next/image";
-import { useRouter } from "next/navication";
+import { useRouter } from "next/navigation"; //make sure to check why its navication 
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -18,7 +18,7 @@ import {
   PatientFormDefaultValues,
 } from "@/constants";
 import { registerPatient } from "@/lib/actions/patient.actions";
-import { PatientFormValidation } from "@/lib/validation";
+import { PatientFormValidation } from "@/lib/validations";
 
 import "react-datepicker/dist/react-datepicker.css";
 import "react-phone-number-input/style.css";
